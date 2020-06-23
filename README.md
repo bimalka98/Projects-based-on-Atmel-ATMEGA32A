@@ -54,3 +54,5 @@ Imagine we  need to make PINC0 HIGH. This can be done as follows. To make it LOW
 PORTC | = (1 << PINC0);
 PORTC & = ~(1 << PINC0);
 ```
+# PROJECTS
+## Blink an LED
