@@ -56,3 +56,4 @@ PORTC & = ~(1 << PINC0);
 ```
 # PROJECTS
 ## Blink an LED
+![Wiring of blink an led project](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/Figures/wiring.jpg)
