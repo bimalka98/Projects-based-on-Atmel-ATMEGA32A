@@ -26,4 +26,6 @@
 #User Specific Files
 *.atsuo
 
+!*.jpg
+!*.png
 # End of https://www.toptal.com/developers/gitignore/api/atmelstudio
