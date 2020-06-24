@@ -1,7 +1,7 @@
 # Projects-based-on-Atmel-ATMEGA32A
 This repository includes projects based on Atmel ATMEGA32A microcontroller.
 # Pinout of the Atmel ATMEGA32A microcontroller
-
+![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
 ## Port A
 
 * Analog input to the Analog to Digital(A/D) converter
