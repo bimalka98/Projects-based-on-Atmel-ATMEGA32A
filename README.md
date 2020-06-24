@@ -57,3 +57,6 @@ PORTC & = ~(1 << PINC0);
 # PROJECTS
 ## Blink an LED
 ![Wiring of blink an led project](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/Figures/wiring.jpg)
+
+## Knight Rider Effect
+![Wiring of Knight Rider Effect project](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/kre.jpg)
