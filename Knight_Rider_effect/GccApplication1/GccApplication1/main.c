@@ -1,8 +1,10 @@
 /*
  * Created: 6/24/2020 1:01:06 AM
+ * Last Modified: 6/24/2020 4:24:45 PM
  * Author : Bimalka Piyaruwan Thalagala
  * This project is an extension of Blink_an_LED project,
  where 8 LEDs are used to generate a pattern.
+ The logic used in turning the LED on and off is explained in Blink_an_LED project.
 
 In this implementation of knight rider effect with 8 LEDs,
 PORTB is used to connect the 8 LEDs and every LED is connected
@@ -26,14 +28,35 @@ int main(void)
     // DDRB |= 0b11111111;
     //In hexadecimal mode this can easily be written as 0xFF;
     DDRB |= 0xFF;
-
+	
+	// Define the on time of an LED ms.
+	int delay = 50;
 
     // In order to represent the knight rider effect,
     // Only one LED must be lit at a time
-    // And the direction of propogation should be altered,
+    // And the direction of propagation should be altered,
 
     while (1)
     {
-      PORTB |= 0b00000001;
+		
+	// Forward propagation loop
+	// All the LEDs are lit one at a time in order.
+	for (int i = 0; i <=7; i++)
+	{
+		PORTB |= (1 << i);
+		_delay_ms(delay); //LED on time.
+		PORTB &= ~(1 << i);
+	}
+	
+	
+	// Backward Propagation loop.
+	// Here in this loop LED s at the two ends are not used.
+	for (int i = 6; i > 0; i--)
+	{
+		PORTB |= (1 << i);
+		_delay_ms(delay); //LED on time.
+		PORTB &= ~(1 << i);
+	}
+	
     }
 }
