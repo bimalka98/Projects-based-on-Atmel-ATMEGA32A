@@ -1,15 +1,15 @@
 /*
- * Time delaying without using built-in functions
+ * Time delaying using Timer Overflow Flag(TOV) in TIFR(Timer counter Interrupt flag register)
  *
- Functioal Description :  In this implementation of the time delaying,
- the 8-bit TCNT0 timer/counter register is used to count the clock ticks.
- And the clock is used with a prescaling rather than using the original
- clock frequency in order to increse the time taken to overflow.
- Because with this TCNT0 timer the maximum ticks are limited to 255 as
- it is an 8 bit register.
-
  * Created: 6/25/2020 9:55:54 PM
  * Author : Bimalka Piyaruwan Thalagala
+
+ * Functional Description :  In this implementation of the time delaying,
+ the 8-bit TCNT0 timer/counter register is used to count the clock ticks.
+ And the clock is used with a Prescaling rather than using the original
+ clock frequency in order to increase the time taken to overflow.
+ Because with this TCNT0 timer the maximum ticks are limited to 255 as
+ it is an 8 bit register.
  */
 
 // Let's define the clock frequency to be 1 MHz.
@@ -25,9 +25,9 @@ And counter increments its value by 1 in every microsecond if we don't
 scale it. And maximum countable time will be 255 microseconds without
 any overflow.
 
-Consider we use the maximum scling factor of 1024 by setting
+Consider we use the maximum scaling factor of 1024 by setting
 the Clock Select bits in TCCR0 register to `101`. At the moment
-this is set TCNT0 register starts couting the ticks.
+this is set TCNT0 register starts counting the ticks.
 
 Then clock = clock/1024 = 1000000/1024 = 976.5625 Hz
 Therefore clock cycles time = 1/ 976.5625 = 1.024 ms
@@ -50,23 +50,24 @@ void delay();
 
 int main(void)
 {
-    // To recognize what is going on we can ckeck the desired
-    // behaviour using an LED.
+    // To recognize what is going on we can check the desired
+    // behavior using an LED.
     DDRB |= (1 <<PINB0);
 
     while (1)
     {
       PORTB |= (1 << PINB0); // Turn the LED on
-      // lOOP FOR THE DELAY.
+      //THE DELAY.
       delay();
       PORTB &= ~(1 << PINB0); // Turn the LED off
-      // lOOP FOR THE DELAY.
+      //THE DELAY.
       delay();
     }
 }
 
 
 // Function to generate 1 second delay.
+
 void delay(){
   // Prescaling the clock and initiate the counting.
   TCCR0 =  0b00000101;
@@ -74,7 +75,10 @@ void delay(){
   int overflowCount = 0;
   // lOOP FOR THE DELAY.
   // Need to identify 4 overflows
-  while (overflowCount < 5)
+  while (overflowCount < 4)
+  // By changing the overflowCount delay can be changed.
+  // 1 second = 4 overflowCounts
+  // 500 ms = 2 overflowCounts
   {
     // From the moment we configure TCCR0, TCNT0 counts.
 
@@ -95,7 +99,7 @@ void delay(){
     overflowCount++;
   }
     // TCNT0 begins counting when we configure the TCCR0.
-    // In order to strat counting again from the beginning,
+    // In order to start counting again from the beginning,
     //  TCCR0 must be set to its initial value. ie.0x00.
   TCCR0 =  0x00;
 }
