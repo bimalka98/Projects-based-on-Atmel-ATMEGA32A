@@ -61,7 +61,7 @@ PORTC & = ~(1 << PINC0);
 ## Knight Rider Effect
 ![Wiring of Knight Rider Effect project](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/kre.jpg)
 
-## Time delaying without using built-in functions
+## Time delaying using TOV flag in TIFR
 
 ### Timers in ATMEGA32A
 
