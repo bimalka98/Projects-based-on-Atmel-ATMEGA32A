@@ -3,7 +3,7 @@
  * Created: 6/25/2020 3:03:22 PM
  * Author : Bimalka Piyaruwan Thalagala
  * Function : Change_light_intensity_using_PWM.
-Connect the LED to the OC0(PB3) pin through a current limiting resistor.
+Connect the LED to the OC0(PINB3) pin through a current limiting resistor.
 
  */
 
@@ -34,7 +34,7 @@ int main(void)
     // Clear OC0 on compare match, set OC0 at BOTTOM,(non-inverting mode)
     TCCR0 |= (1 << COM01);
 
-    // Clock Selection for clock without prescaling.
+    // Clock Selection for clock without Prescaling.
     // Timer starts counting at the moment this is defined.
     TCCR0 |= (1 << CS00);
 
@@ -47,14 +47,20 @@ int main(void)
 
 
       // Increase the brightness of the LED
-      for(brightness = 0; brightness < 256; brightness++)
+	  // Step can be changed by changing the increment step in the last parameter of the for loop
+	  // Make it 1 to get the smoothest transition.(or type brightness++)
+      for(brightness = 0; brightness < 256; brightness+=5)
       {
         OCR0 = brightness;
         _delay_ms(delay);
       }
-
+		
+		_delay_ms(250);
+		
       // Decrease the brightness of the LED
-      for(brightness = 255; brightness >=0; brightness--)
+	  // Step can be changed by changing the increment step in the last parameter of the for loop
+	  // Make it 1 to get the smoothest transition.(or type brightness--)
+      for(brightness = 255; brightness >=0; brightness-=5)
       {
         OCR0 = brightness;
         _delay_ms(delay);
