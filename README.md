@@ -63,11 +63,11 @@ PORTC & = ~(1 << PINC0);
 
 ## Knight Rider Effect
 
-[![ViewCode](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)]
+To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
 
 ## Time delaying using TOV flag in TIFR
 
-[![ViewCode](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)]
+To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
 
 ### Timers in ATMEGA32A
 
@@ -111,7 +111,7 @@ Initial Value   0    0    0     0    0    0     0   0
 ```
 ## Change light intensity of an LED using Pulse Width Modulation(PWM)
 
-[![ViewCode](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)]
+To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
 
 Simply PWM is a way of getting an analog output using a digital signal. In ATMEGA32A there are 4 pins which can be used to generate PWM signals. In this example I have used OC0 pin.
 
