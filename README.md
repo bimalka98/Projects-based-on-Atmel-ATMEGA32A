@@ -93,7 +93,7 @@ CS02/CS01/CS00 Description
 ```
 All three timers are associated with one common register called `TIFR`(Timer/Counter Interrupt Flag Register).
 
-  * If TCNTn = OCRn then `OCFn`(output Compare Flag) in TIFR is set to 1
+* If TCNTn = OCRn then `OCFn`(output Compare Flag) in TIFR is set to 1
 * If TCNTn overflows its maximum value then `TOVn`(Timer Overflow Flag) in TIFR is automatically set to 1. To clear this flag we need to set it to 1 not to 0.
 ```
 TIFR Register
@@ -105,4 +105,45 @@ Initial Value   0    0    0     0    0    0     0   0
 ```
 ## Change light intensity of an LED using Pulse Width Modulation(PWM)
 
-Simply PWM is a way of getting an analog output using a digital signal.
+Simply PWM is a way of getting an analog output using a digital signal. In ATMEGA32A there are 4 pins which can be used to generate PWM signals. In this example I have used OC0 pin.
+
+* PWM supported pins
+
+1. OC0   PB3
+2. OC1A  PD5
+3. OC1B  PD4
+4. OC2   PD7
+
+* Period of the wave = maximum value which can be stored in the 8 bit counter. i.e. 255
+* Duty cycle = Value of the Output Compare register(OCRn)
+
+### Bits configuration of the TCCR0 register.
+```
+TCCR0 Register
+
+Bit           7     6     5      4    3     2     1   0
+TCCR0         FOC0 WGM00 COM01 COM00 WGM01 CS02 CS01 CS00
+Read/Write    W     R/W   R/W   R/W   R/W  R/W  R/W  R/W
+Initial Value 0     0     0      0    0     0    0    0
+```
+* Compare Output Mode for Fast PWM Mode- Bit 5:4
+
+We need to set COM01 and COM00 bits to  `1 0 ` to get the required PWM output. In this configuration PWM signal output(0C0) becomes HIGH(5V) at the beginning(BOTTOM) of the TCNT0 counting cycle and PWM signal output(0C0) becomes LOW(0V) at the value specified in the OCR0(Output Compare register).
+```
+COM01 COM00 Description
+  0     0     Normal port operation, OC0 disconnected.
+  0     1     Reserved
+  1     0     Clear OC0 on compare match, set OC0 at BOTTOM,(non-inverting mode)
+  1     1     Set OC0 on compare match, clear OC0 at BOTTOM,(inverting mode)
+```
+* Waveform Generation Mode- Bit 6, 3
+
+In this example I have used Fast PWM mode to generate the PWM wave. To enable this mode set the WGM01 and WGM00 bits in the TCCR0 as given below.
+```
+Mode    WGM01      WGM00    Timer/Counter Mode of Operation
+  0       0          0          Normal
+  1       0          1          PWM, Phase Correct
+  2       1          0          CTC
+  3       1          1          Fast PWM
+```
+* In addition to above mentioned bits, Clock Select bits must also be configured.
