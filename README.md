@@ -56,18 +56,12 @@ PORTC & = ~(1 << PINC0);
 ```
 # PROJECTS
 
-## Blink an LED
-
-To View Code [![](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/code.svg)](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
+## 1. Blink an LED [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
 
 
-## Knight Rider Effect
+## 2. Knight Rider Effect [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
 
-To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
-
-## Time delaying using TOV flag in TIFR
-
-To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
+## 3. Time delaying using TOV flag in TIFR [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
 
 ### Timers in ATMEGA32A
 
@@ -109,9 +103,7 @@ TIFR          OCF2 TOV2 ICF1 OCF1A OCF1B TOV1 OCF0 TOV0
 Read/Write     R/W  R/W  R/W   R/W  R/W  R/W  R/W  R/W
 Initial Value   0    0    0     0    0    0     0   0
 ```
-## Change light intensity of an LED using Pulse Width Modulation(PWM)
-
-To [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
+## 4. Change light intensity of an LED using Pulse Width Modulation(PWM) [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
 
 Simply PWM is a way of getting an analog output using a digital signal. In ATMEGA32A there are 4 pins which can be used to generate PWM signals. In this example I have used OC0 pin.
 
@@ -125,7 +117,7 @@ Simply PWM is a way of getting an analog output using a digital signal. In ATMEG
 * Period of the wave = maximum value which can be stored in the 8 bit counter. i.e. 255
 * Duty cycle = Value of the Output Compare register(OCRn)
 
-### Bits configuration of the TCCR0 register.
+### Bit configuration of the TCCR0 register.
 ```
 TCCR0 Register
 
