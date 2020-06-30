@@ -58,7 +58,7 @@ PORTC & = ~(1 << PINC0);
 
 ## Blink an LED
 
-[![ViewCode](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)]
+[![ViewCode](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/code.png)](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
 
 
 ## Knight Rider Effect
