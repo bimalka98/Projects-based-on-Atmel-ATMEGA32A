@@ -1,7 +1,19 @@
-# Projects-based-on-Atmel-ATMEGA32A
-This repository includes projects based on Atmel ATMEGA32A microcontroller.
+## Various Projects based on Atmel ATMEGA32A microcontroller are included in this repo and required information to understand the codes are also given in this page.
+
+# PROJECTS
+
+## 1. Blink an LED [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
+
+## 2. Knight Rider Effect [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
+
+## 3. Time delaying using TOV flag in TIFR [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
+
+
+
+
 # Pinout of the Atmel ATMEGA32A microcontroller
 ![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
+
 ## Port A
 
 * Analog input to the Analog to Digital(A/D) converter
@@ -54,14 +66,7 @@ Imagine we  need to make PINC0 HIGH. This can be done as follows. To make it LOW
 PORTC | = (1 << PINC0);
 PORTC & = ~(1 << PINC0);
 ```
-# PROJECTS
 
-## 1. Blink an LED [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
-
-
-## 2. Knight Rider Effect [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
-
-## 3. Time delaying using TOV flag in TIFR [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
 
 ### Timers in ATMEGA32A
 
