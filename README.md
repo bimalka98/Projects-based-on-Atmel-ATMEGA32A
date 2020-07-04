@@ -1,32 +1,41 @@
-## Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository. 
-## All the required information related to the microcontroller for the understanding of the key concepts behind each program is also given in this page.
+## Note:
+### Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository. 
+### All the required information related to the microcontroller, to understand the key concepts behind each program is also given.
 
 # PROJECTS
 
-## 1. Blink an LED [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
+## 1. Blink an LED 
+### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
+### [View Concept-Basic]
 
-## 2. Knight Rider Effect [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
+## 2. Knight Rider Effect 
+### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
+### [View Concept-Basic]
 
-## 3. Time delaying using TOV flag in TIFR [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
+## 3. Time delaying using TOV flag in TIFR 
+### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
+### [View Concept-Timers in ATMEGA32A]
 
-
+## 4. Change light intensity of an LED using Pulse Width Modulation(PWM) 
+### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
+### [View Concept-PWM Signal Generation in ATMEGA32A]
 
 
 # Pinout of the Atmel ATMEGA32A microcontroller
 ![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
 
 ## Port A
-
 * Analog input to the Analog to Digital(A/D) converter
 * 8-bit bidirectional input/output(I/O) port, if it is not used as analog input to A/D converter.
 
 ## Port B, Port C, Port D
-
 * 8-bit bidirectional input/output(I/O) ports
 
-# Configuration of pins
+# KEY CONCEPTS
 
-## Data Direction of a pin
+## Configuration of pins
+
+### Data Direction of a pin
 
 * If set to logic 1 --> Output
 * If set to logic 0 --> Input
@@ -39,7 +48,7 @@ A register has 8 bits therefore every bit must be precisely configured. x can be
 
 Else this can be done as follows
 
-n = {A, B, C, D} and i = {0, 1, 2, 3, 4, 5, 6, 7}
+n = {A, B, C, D} and i = {0, 1, 2, 3, 4, 5, 6, 7}- the position of the pin in a given port
 DDRn  | = (x << PINni);
 ```
 Imagine we  need to configure the PINC0 to be an output pin and every other pin to be an input pin in that port, it can be done as follows.
@@ -49,7 +58,7 @@ DDRC | = 0b00000001;
 or
 DDRC | = (1 << PINC0);
 ```
-## Logical state of a pin
+### Logical state of a pin
 
 * If set to logic 1 --> HIGH
 * If set to logic 0 --> LOW
@@ -59,17 +68,17 @@ In general,
 n = {A, B, C, D}, i = {0,1,2,3,4,5,6,7}
 
 PORTn | = (1 << PINni);
-This PORTn register also contains 8 bits therefore every bit must be precisely configured if the binary format is used.
+This PORTn registers also contain 8 bits therefore every bit must be precisely configured if the binary format is used.
 ```
 
-Imagine we  need to make PINC0 HIGH. This can be done as follows. To make it LOW, code in the next line can be used.
+Imagine we need to make only the PINC0 HIGH. This can be done as follows. To make it LOW, code in the next line can be used.
 ```
 PORTC | = (1 << PINC0);
 PORTC & = ~(1 << PINC0);
 ```
 
 
-### Timers in ATMEGA32A
+## Timers in ATMEGA32A
 
 ATMEGA32A has three timers.
 * Timer 0  08-bit timer TCNT0, OCR0, TCCR0
@@ -85,7 +94,7 @@ TCCR0         FOC0 WGM00 COM01 COM00 WGM01 CS02 CS01 CS00
 Read/Write    W     R/W   R/W   R/W   R/W  R/W  R/W  R/W
 Initial Value 0     0     0      0    0     0    0    0
 ```
-Configuration of CS bits are done as follows.
+Configuration of CS bits is done as follows.
 ```
 CS02/CS01/CS00 Description
 000 No clock source (Timer/Counter stopped because there is no clock source)
@@ -109,19 +118,19 @@ TIFR          OCF2 TOV2 ICF1 OCF1A OCF1B TOV1 OCF0 TOV0
 Read/Write     R/W  R/W  R/W   R/W  R/W  R/W  R/W  R/W
 Initial Value   0    0    0     0    0    0     0   0
 ```
-## 4. Change light intensity of an LED using Pulse Width Modulation(PWM) [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
 
-Simply PWM is a way of getting an analog output using a digital signal. In ATMEGA32A there are 4 pins which can be used to generate PWM signals. In this example I have used OC0 pin.
+## PWM Signal Generation in ATMEGA32A
+PWM is a method of getting an analog output(some value on a given range) using a digital signal which has only two states(HIGH/LOW). In ATMEGA32A there are 4 pins which can be used to generate PWM signals.
 
-* PWM supported pins
+### PWM supported pins
 
 1. OC0   PB3
 2. OC1A  PD5
 3. OC1B  PD4
 4. OC2   PD7
 
-* Period of the wave = maximum value which can be stored in the 8 bit counter. i.e. 255
-* Duty cycle = Value of the Output Compare register(OCRn)
+* Period of the PWM wave corresponds to  --> maximum value which can be stored in the 8 bit counter. i.e. 255
+* Duty cycle corresponds to              --> Value specified in the Output Compare register(OCRn)
 
 ### Bit configuration of the TCCR0 register.
 ```
