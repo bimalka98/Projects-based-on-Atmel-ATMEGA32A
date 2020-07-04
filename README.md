@@ -1,16 +1,19 @@
 ## Note:
-### Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository.
-### All the required information related to the microcontroller, to understand the key concepts behind each program is also given.
+* Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository.
+* The Program related to each project can be viewed by clicking `View Code` given under each project.
+* All the required information related to the microcontroller to understand the key concepts behind each project, are hyperlinked along with the project as `View Concept-<title>`.
+* Each program is also explained deeply in the comments of the code.
+
 
 # PROJECTS
 
 ## 1. Blink an LED
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
-#### [View Concept-Basics](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
+#### [View Concept-Configuration of pins](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
 
 ## 2. Knight Rider Effect
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
-#### [View Concept-Basics](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
+#### [View Concept-Configuration of pins](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
 
 ## 3. Time delaying using TOV flag in TIFR 
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
@@ -23,13 +26,6 @@
 
 # Pinout of the Atmel ATMEGA32A microcontroller
 ![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
-
-## Port A
-* Analog input to the Analog to Digital(A/D) converter
-* 8-bit bidirectional input/output(I/O) port, if it is not used as analog input to A/D converter.
-
-## Port B, Port C, Port D
-* 8-bit bidirectional input/output(I/O) ports
 
 # KEY CONCEPTS
 
