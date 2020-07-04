@@ -1,24 +1,24 @@
 ## Note:
-### Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository. 
+### Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository.
 ### All the required information related to the microcontroller, to understand the key concepts behind each program is also given.
 
 # PROJECTS
 
-## 1. Blink an LED 
-### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
-### [View Concept-Basic]
+## 1. Blink an LED
+#### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
+#### [View Concept-Basics](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
 
-## 2. Knight Rider Effect 
-### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
-### [View Concept-Basic]
+## 2. Knight Rider Effect
+#### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
+#### [View Concept-Basics](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
 
 ## 3. Time delaying using TOV flag in TIFR 
-### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
-### [View Concept-Timers in ATMEGA32A]
+#### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
+#### [View Concept-Timers in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#timers-in-atmega32a)
 
-## 4. Change light intensity of an LED using Pulse Width Modulation(PWM) 
-### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
-### [View Concept-PWM Signal Generation in ATMEGA32A]
+## 4. Change light intensity of an LED using Pulse Width Modulation(PWM)
+#### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
+#### [View Concept-PWM Signal Generation in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#pwm-signal-generation-in-atmega32a)
 
 
 # Pinout of the Atmel ATMEGA32A microcontroller
