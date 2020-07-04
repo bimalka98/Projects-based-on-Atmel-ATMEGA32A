@@ -24,7 +24,7 @@
 #### [View Concept-PWM Signal Generation in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#pwm-signal-generation-in-atmega32a)
 
 
-# KEY CONCEPTS
+# (☞ﾟヮﾟ)☞ KEY CONCEPTS
 
 # Pinout of the Atmel ATMEGA32A microcontroller
 ![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
