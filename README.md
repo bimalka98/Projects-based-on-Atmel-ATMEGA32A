@@ -1,4 +1,5 @@
-## Various Projects based on Atmel ATMEGA32A microcontroller are included in this repo and required information to understand the codes are also given in this page.
+## Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository. 
+## All the required information related to the microcontroller for the understanding of the key concepts behind each program is also given in this page.
 
 # PROJECTS
 
