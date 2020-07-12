@@ -25,7 +25,7 @@
 
 ## 5. Interfacing a 16*2 LCD display through I2C
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Interfacing_an_LCD_display_through_I2C/GccApplication1/GccApplication1/main.c)
-#### [View Concept]()
+#### [View Concept](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#interfacing-a-162-lcd-display-through-i2c)
 
 # 🔴🟡🟢 KEY CONCEPTS
 
