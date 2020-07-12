@@ -23,6 +23,9 @@
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Change_light_intensity_using_PWM/GccApplication1/GccApplication1/main.c)
 #### [View Concept-PWM Signal Generation in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#pwm-signal-generation-in-atmega32a)
 
+## 5. Interfacing a 16*2 LCD display through I2C
+#### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Interfacing_an_LCD_display_through_I2C/GccApplication1/GccApplication1/main.c)
+#### [View Concept]()
 
 # 🔴🟡🟢 KEY CONCEPTS
 
@@ -158,3 +161,15 @@ Mode    WGM01      WGM00    Timer/Counter Mode of Operation
   3       1          1          Fast PWM
 ```
 * In addition to above mentioned bits, Clock Select bits must also be configured.
+
+## Interfacing a 16*2 LCD display through I2C
+
+In order to interface the 16*2 LCD display through I2C, what is called `I2C interface board module` must be attached to the LCD. After that communication can be done between the LCD and the ATMEGA32A microcontroller through the SCL and SDA pins. Additional information is available in the comments of the code.
+
+To use the functions in the code I2C libraries must be added to the project. This can simply be done as follows.
+
+1. First place the `i2c_lcd.c` , `i2c_lcd.h` , `i2cmaster.h` , `twimaster.c` files in the same directory where the `main.c` file of your project is located.
+2. Then right click on the `GccApplication1` in the `solution explorer` of the Atmel Studio window and click on `Add`.
+3. Next select `Existing Item...` and locate the above mentioned files and click `Add`.
+4. That's it!
+![guide](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/guide.png)

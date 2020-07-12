@@ -28,4 +28,5 @@
 
 !*.jpg
 !*.png
+!*.h
 # End of https://www.toptal.com/developers/gitignore/api/atmelstudio
