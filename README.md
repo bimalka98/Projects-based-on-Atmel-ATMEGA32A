@@ -3,7 +3,7 @@
 * The Program related to each project can be viewed by clicking `View Code` given under each project.
 * All the required information related to the microcontroller to understand the key concepts behind each project, are hyperlinked along with the project as `View Concept-<title>`.
 * Each program is also explained deeply in the comments of the code.
-
+* Guide to setup USBASP can be found [here](https://www.youtube.com/watch?v=kPcgjkQn2eE)
 
 # PROJECTS
 
@@ -15,7 +15,7 @@
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Knight_Rider_effect/GccApplication1/GccApplication1/main.c)
 #### [View Concept-Configuration of pins](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#configuration-of-pins)
 
-## 3. Time delaying using TOV flag in TIFR 
+## 3. Time delaying using TOV flag in TIFR
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Time_delaying_using_TOV_in_TIFR/GccApplication1/GccApplication1/main.c)
 #### [View Concept-Timers in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#timers-in-atmega32a)
 
@@ -24,7 +24,7 @@
 #### [View Concept-PWM Signal Generation in ATMEGA32A](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/README.md#pwm-signal-generation-in-atmega32a)
 
 
-# 🔴🟡🟢 KEY CONCEPTS 
+# 🔴🟡🟢 KEY CONCEPTS
 
 # Pinout of the Atmel ATMEGA32A microcontroller
 ![pinout atmega](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/Pinout.PNG)
