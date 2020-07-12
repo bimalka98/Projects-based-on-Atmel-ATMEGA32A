@@ -164,7 +164,9 @@ Mode    WGM01      WGM00    Timer/Counter Mode of Operation
 
 ## Interfacing a 16*2 LCD display through I2C
 
-In order to interface the 16*2 LCD display through I2C, what is called `I2C interface board module` must be attached to the LCD. After that communication can be done between the LCD and the ATMEGA32A microcontroller through the SCL and SDA pins. Additional information is available in the comments of the code.
+In order to interface the 16*2 LCD display through I2C, what is called `I2C interface board module`(shown below) must be attached to the LCD. After that communication can be done between the LCD and the ATMEGA32A microcontroller through the SCL and SDA pins. Additional information is available in the comments of the code.
+
+![i2c interface module](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/i2c.jpg)
 
 To use the functions in the code I2C libraries must be added to the project. This can simply be done as follows.
 
@@ -172,4 +174,5 @@ To use the functions in the code I2C libraries must be added to the project. Thi
 2. Then right click on the `GccApplication1` in the `solution explorer` of the Atmel Studio window and click on `Add`.
 3. Next select `Existing Item...` and locate the above mentioned files and click `Add`.
 4. That's it!
+
 ![guide](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/guide.png)
