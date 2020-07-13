@@ -41,7 +41,7 @@
 int main(void)
 {
     // Data need to be in "char" data type to display through the LCD.
-    // Define a global variables to hold char data.
+    // Define global variables to hold char data.
     char *line_1_text = "Hello world!";
     char *line_2_text = "What's up ?";
 
