@@ -1,3 +1,8 @@
+<p align="center">
+<a href="https://bimalka98.github.io/">
+<img width="100px" src="https://github.com/bimalka98/bimalka98/blob/master/Logos/b98-logo.png" align="center"/>
+</a>
+
 ## Note:
 * Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository.
 * The Program related to each project can be viewed by clicking `View Code` given under each project.
