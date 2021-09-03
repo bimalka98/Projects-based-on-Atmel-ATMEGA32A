@@ -1,8 +1,3 @@
-<p align="center">
-<a href="https://bimalka98.github.io/">
-<img width="100px" src="https://github.com/bimalka98/bimalka98/blob/master/Logos/b98-logo.png" align="center"/>
-</a>
-
 ## Note:
 * Various Projects based on Atmel ATMEGA32A microcontroller are included in this repository.
 * The Program related to each project can be viewed by clicking `View Code` given under each project.
@@ -10,7 +5,7 @@
 * Each program is also explained deeply in the comments of the code.
 * Guide to setup USBASP can be found [here](https://www.youtube.com/watch?v=kPcgjkQn2eE)
 
-# PROJECTS
+# *PROJECTS*
 
 ## 1. Blink an LED
 #### [View Code](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Blink_an_LED/GccApplication1/GccApplication1/main.c)
@@ -89,7 +84,7 @@ ATMEGA32A has three timers.
 * Timer 1  16-bit timer TCNT1, OCR1, TCCR1
 * Timer 2  08-bit timer TCNT2, OCR2, TCCR2
 
-Each timer in ATMEGA32A is mainly associated with three different registers. Namely `TCNTn`(Timer Counter register) which counts the clock ticks, `OCRn`(Output Compare register) which is used to store some value to be compared with the TCNTn and finally the `TCCRn`(Timer Counter control register) which is used to configure the operation mode of the timer. The first three bits(2:0) in the TCCRn register are used to select the clock source and called `Clock Select(CS)` bits.
+*Each timer in ATMEGA32A is mainly associated with three different registers. Namely `TCNTn`(Timer Counter register) which counts the clock ticks, `OCRn`(Output Compare register) which is used to store some value to be compared with the TCNTn and finally the `TCCRn`(Timer Counter control register) which is used to configure the operation mode of the timer. The first three bits(2:0) in the TCCRn register are used to select the clock source and called `Clock Select(CS)` bits.*
 ```
 TCCR0 Register
 
@@ -124,7 +119,7 @@ Initial Value   0    0    0     0    0    0     0   0
 ```
 
 ## PWM Signal Generation in ATMEGA32A
-PWM is a method of getting an analog output(some value on a given range) using a digital signal which has only two states(HIGH/LOW). In ATMEGA32A there are 4 pins which can be used to generate PWM signals.
+*PWM is a method of getting an analog output(some value on a given range) using a digital signal which has only two states(HIGH/LOW). In ATMEGA32A there are 4 pins which can be used to generate PWM signals.*
 
 ### PWM supported pins
 
@@ -168,7 +163,6 @@ Mode    WGM01      WGM00    Timer/Counter Mode of Operation
 * In addition to above mentioned bits, Clock Select bits must also be configured.
 
 ## Interfacing a 16*2 LCD display through I2C
-
 In order to interface the 16*2 LCD display through I2C, what is called `I2C interface board module`(shown below) must be attached to the LCD. After that communication can be done between the LCD and the ATMEGA32A microcontroller through the SCL and SDA pins. Additional information is available in the comments of the code.
 
 ![i2c interface module](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/i2c.jpg)
@@ -181,3 +175,10 @@ To use the functions in the code I2C libraries must be added to the project. Thi
 4. That's it!
 
 ![guide](https://github.com/bimalka98/Projects-based-on-Atmel-ATMEGA32A/blob/master/Figures/guide.png)
+
+
+# *References*
+
+- As a beginner in the embedded field, the best way to learn about the controller is by creating code for each peripheral inside it. In simple words start understanding and writing code for GPIOs, ADC, PWM, Timers, Interrupts, UART, SPI, I2C, etc. [Click here to start learning step by step](https://www.electronicwings.com/avr-atmega/inside).
+- With this, you can start interfacing Sensors and Modules. You can find over 40 sensors/ Modules interfacing guides with ATmega controller here. [Click Here for Interface guides of over 40 Sensors, Modules](https://www.electronicwings.com/avr-atmega/interfaces)
+
