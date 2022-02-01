@@ -5,7 +5,7 @@
 1. Go to https://zadig.akeo.ie/ and download Zadig
 
 <p align="center">
-<img src="figures/zadig.jpeg"  align="center" height=800>
+<img src="Figures/zadig.jpeg"  align="center" height=800>
 </p>
 
 3. Plug the USBasp cable into one of the USB ports.
@@ -28,7 +28,7 @@ Initial Directory: $(ProjectDir)
 ***Dont forget to check Use output window and Prompt for arguments (optional). After adding these entries your external tools window will look like this. Then press Apply and OK.***
 
 <p align="center">
-<img src="figures/ext_tools.PNG"  align="center" height=400>
+<img src="Figures/ext_tools.PNG"  align="center" height=400>
 </p>
 
 ## 4. *Before using avrdude, Solution must be built. Then it can be uploaded to the MCU (Microcontroller Unit)*
